@@ -1,0 +1,70 @@
+.typing-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: var(--surface);
+  border-radius: 12px;
+}
+
+.typing-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.typing-text {
+  font-family: "Courier New", monospace;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.typing-text .pending {
+  color: var(--text-muted);
+}
+
+.typing-text .correct {
+  color: var(--success);
+}
+
+.typing-text .wrong {
+  color: var(--error);
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.typing-text .current {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 2px;
+}
+
+.typing-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.typing-done {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(34, 197, 94, 0.15);
+  border-radius: 8px;
+  color: var(--success);
+}
+
+.typing-reset {
+  padding: 0.5rem 1.25rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.typing-reset:hover {
+  opacity: 0.85;
+}
