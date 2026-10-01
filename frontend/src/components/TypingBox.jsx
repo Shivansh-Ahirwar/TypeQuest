@@ -1,6 +1,5 @@
 import { useRef } from 'react'
 import useTyping from '../hooks/useTyping'
-import '../styles/TypingBox.css'
 
 export default function TypingBox({ text }) {
   const inputRef = useRef(null)
