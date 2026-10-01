@@ -19,7 +19,8 @@ def init_db():
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL,
             email TEXT NOT NULL UNIQUE,
-            password_hash TEXT NOT NULL,
+            password_hash TEXT,
+            google_id TEXT UNIQUE,
             created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
         )
         """
